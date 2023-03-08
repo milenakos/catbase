@@ -28,7 +28,7 @@ class CatDB(UserDict):
         except json.decoder.JSONDecodeError:
             if self.safe:
                 raise
-            print("Erorr decoding JSON, continuing from empty.")
+            print("Error decoding JSON, continuing from empty.")
             self.data = {}
             
     def commit(self):
