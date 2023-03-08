@@ -1,10 +1,10 @@
-# CatDB
+# CatBase
 JSON-based database you were dreaming of!
 
 ## Quickstart
 
 ```py
-from catdb import CatDB
+from catbase import CatDB
 
 db = CatDB("example.json")
 
@@ -18,7 +18,7 @@ db.commit() # commit to save changes
 
 ### Autocommiting
 ```py
-from catdb import CatDB
+from catbase import CatDB
 
 db = CatDB("example.json", autocommit=True)
 
@@ -29,7 +29,7 @@ print(db["test"])
 
 ### KeyError safety
 ```py
-from catdb import CatDB
+from catbase import CatDB
 
 db = CatDB("example.json")
 
@@ -40,7 +40,7 @@ print(db["test"])
 
 ### Custom KeyError defaults
 ```py
-from catdb import CatDB
+from catbase import CatDB
 
 db = CatDB("example.json", none = 3)
 
@@ -51,7 +51,7 @@ print(db["test"] + 1)
 
 ### Broken JSON safety
 ```py
-from catdb import CatDB
+from catbase import CatDB
 
 db = CatDB("example.json", safe = False)
 
